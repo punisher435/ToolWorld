@@ -51,7 +51,7 @@ function StackHome() {
 }
 
 
-function StackProgress() {
+/* function StackProgress() {
   return (
       
       <Stack.Navigator initialRouteName="Mycourses" screenOptions={{
@@ -71,9 +71,9 @@ function StackProgress() {
         
       </Stack.Navigator>
   )
-}
+} */
 
-function StackProfile() {
+/* function StackProfile() {
   return (
       
       <Stack.Navigator initialRouteName="MainProfile" screenOptions={{
@@ -88,13 +88,13 @@ function StackProfile() {
       
       >
         <Stack.Screen name="MainProfile" component={MainProfile} />
-        <Stack.Screen name="AccountSettings" component={AccountSettings} />
+         <Stack.Screen name="AccountSettings" component={AccountSettings} />
         <Stack.Screen name="About" component={About} />
         <Stack.Screen name="Favourite" component={Favourite} />
-        <Stack.Screen name="Myorders" component={Myorders} />
+        <Stack.Screen name="Myorders" component={Myorders} /> 
       </Stack.Navigator>
   )
-}
+} */
 
 
 
@@ -121,8 +121,8 @@ function NavigationHome() {
         
       }} >
         <Tab.Screen name="Home"  component={StackHome} />
-        <Tab.Screen name="ProgressStack"  component={StackProgress} />
-        <Tab.Screen name="ProfileStack"  component={StackProfile} />
+        {/* <Tab.Screen name="ProgressStack"  component={StackProgress} />
+        <Tab.Screen name="ProfileStack"  component={StackProfile} /> */}
         {/* <Tab.Screen name="AccountStack"  component={StackAccountSettings}/> */}
         
       </Tab.Navigator>

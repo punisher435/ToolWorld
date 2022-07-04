@@ -4,12 +4,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
 
-/* import Welcome from './screens/Welcome';
-import Signup from './screens/Signup';
+import Welcome from './screens/Welcome'
+/* import Signup from './screens/Signup';
 import Login from './screens/Login';
 import Verify from './screens/Verify';
 import Otpsend from './screens/Otpsend';
-import ForgetPassword from './screens/ForgetPassword'; */
+import ForgetPassword from './screens/ForgetPassword'; */ 
 
 
 
