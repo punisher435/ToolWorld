@@ -14,7 +14,7 @@ export default function Waiting() {
           <View style={styles.logocon1}>
             <View style={styles.logocon2}>
               <Image source={
-                require('../config/assets/QI_Play_Altar_Logo_White_Transparant_1.png')
+                require('../config/assets/logo.png')
 
               }
                 style={styles.image}></Image>
