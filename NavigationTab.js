@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
 
-import Welcome from './screens/Welcome'
+import Welcome from "./Screens/Welcome"
 /* import Signup from './screens/Signup';
 import Login from './screens/Login';
 import Verify from './screens/Verify';
