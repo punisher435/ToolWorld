@@ -11,7 +11,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
 import { Form, FormField, SubmitButton } from "../Components/forms";
-import styles from './Login.style';
+import styles from './Setpassword.style';
 import AppTextInput from "../Components/TextInput";
 
 
@@ -27,13 +27,13 @@ const validationSchema = Yup.object().shape({
 
 
     Email: Yup.string().required().email('Must be a valid email').label("Email"),
-    Password: Yup.string().required().min(8).label("Password"),
+    Captcha: Yup.string().required().min(4).label("Captcha"),
 });
 
 
 
 
-export default function Login() {
+export default function Setpassword() {
 
     return (
 
@@ -46,19 +46,19 @@ export default function Login() {
 
                         } />
                     </View>
-                    <View style={{}} >
+                    {/* <View style={{}} >
                     <TouchableOpacity>
                         <Text style={styles.skip}>SKIP</Text>
                         </TouchableOpacity>
-                    </View>
+                    </View> */}
                 </View>
 
                 <View style={styles.body1}>
                     <View >
-                        <Text style={styles.txt}>Let's Sign You In</Text>
+                        <Text style={styles.txt}>Set your Password?</Text>
                     </View>
                     <View>
-                        <Text style={styles.txt1}>Existing users,please login in here to continue</Text>
+                        <Text style={styles.txt1}>Please Enter your Email Address. Your will Receive a link to Create a new Password via email.</Text>
                     </View>
 
                     <View style={{ marginTop: "10%" }}>
@@ -84,54 +84,30 @@ export default function Login() {
 
                                 />
                             </View>
+                            <View style={styles.captcha}>
+                                <Image source={require("../config/assets/captcha.png")}/>
+                            </View>
                             <View style={{ marginTop: 7 }}>
-                                <Text style={styles.txtt}>Password*</Text>
+                                <Text style={styles.txtt}>Please Enter Captcha*</Text>
                             </View>
                             <View style={styles.formfield}>
                                 <FormField
                                     autoCapitalize="none"
                                     autoCorrect={false}
-                                    secureTextEntry={true}
-
-                                    name="Password"
+                                    width="60%"
+                                    name="Captcha"
                                 // holder="Password*"
 
                                 />
 
                             </View>
 
-                            <View style={{ flexDirection: "row", marginTop: "3%" }}>
-                                <View style={{ flexDirection: "column" }}>
-                                    <View style={{ flexDirection: "row" }}>
-                                        <View style={{ flexDirection: "column" }}>
-                                            <Image source={require('../config/assets/BG.png')}></Image>
-                                        </View>
-                                        <View style={{ flexDirection: "column" }}>
-                                            <Text style={styles.sign}>Keep me signed In</Text>
-                                        </View>
-                                    </View>
-                                </View>
-                                <View style={{ flexDirection: "column", marginLeft: "28%" }} >
-                                    <TouchableOpacity>
-                                        <Text style={styles.pass}>Forgot Password</Text>
-                                    </TouchableOpacity>
-                                </View>
-                            </View>
-
+                            
                             <View style={styles.btn}>
-                                <SubmitButton title="Login" />
+                                <SubmitButton title="Send" />
                             </View>
 
-                            <View style={styles.account}>
-                                <View>
-                                    <Text style={styles.acc}>Don't have an account?</Text>
-                                </View>
-                                <View>
-                                    <TouchableOpacity onPress={{}}>
-                                        <Text style={styles.reg}>REGISTER</Text>
-                                    </TouchableOpacity>
-                                </View>
-                            </View>
+                            
 
                         </Form>
                     </View>

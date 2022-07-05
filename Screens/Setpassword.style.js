@@ -117,6 +117,8 @@ export default StyleSheet.create({
         fontSize: 15 * r,
         fontWeight: '600',
         lineHeight: 22 * l,
+    },
+    captcha:{
+        marginTop:15*r
     }
-
 })
