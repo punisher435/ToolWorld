@@ -2,8 +2,10 @@ import { View, Text,Image,TouchableOpacity } from 'react-native'
 import React from 'react'
 
 import styles from './Welcome.style';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Welcome() {
+  const navigation = useNavigation();
   return (
     <View style={{flex:1,}}>
       
@@ -32,7 +34,7 @@ export default function Welcome() {
 
               <TouchableOpacity
       style={styles.button}
-      onPress={() => {}}
+      onPress={() => {navigation.navigate("Onboarding");}}
     >
       <Text style={styles.text4}>LET’S BEGIN</Text>
     </TouchableOpacity>

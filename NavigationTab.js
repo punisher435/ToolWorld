@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 
 import Welcome from './screens/Welcome'
+import Onboarding from './screens/Onboarding';
 /* import Signup from './screens/Signup';
 import Login from './screens/Login';
 import Verify from './screens/Verify';
@@ -39,6 +40,7 @@ function NavigationTab() {
         headerShown: false,
       }} >
          <WelcomeStack.Screen name="Welcome" component={Welcome} />
+         <WelcomeStack.Screen name="Onboarding" component={Onboarding} />
         {/* <WelcomeStack.Screen name="Signup" component={Signup} />
         <WelcomeStack.Screen name="Login" component={Login} />
         <WelcomeStack.Screen name="OTP" component={Otpsend} />
