@@ -1,4 +1,4 @@
-import { View, Text,Image,TouchableOpacity } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 import styles from './Welcome.style';
@@ -7,8 +7,8 @@ import { useNavigation } from '@react-navigation/native';
 export default function Welcome() {
   const navigation = useNavigation();
   return (
-    <View style={{flex:1,}}>
-      
+    <View style={{ flex: 1, }}>
+
       <View style={styles.bg2}>
       <Image style={styles.bg1} source={
                 require('../config/assets/elipse1.png')

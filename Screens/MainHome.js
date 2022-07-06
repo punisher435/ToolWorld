@@ -5,6 +5,8 @@ export default function MainHome() {
   return (
     <View>
       <Text>MainHome</Text>
+
+      
     </View>
   )
 }

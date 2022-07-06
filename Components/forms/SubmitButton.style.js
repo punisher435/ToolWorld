@@ -4,6 +4,8 @@ import defaultStyles from "../../config/styles";
 import Colors from '../../config/colors';
 
 const z=Constants.z;
+const r = Constants.r;
+const l=Constants.l;
 const Light=Constants.Light;
 const Regular=Constants.Regular;
 const Medium=Constants.Medium;
@@ -14,21 +16,21 @@ export default StyleSheet.create({
     buttonstyle:{
        
 
-        backgroundColor: 'rgba(255, 255, 255, 0.06)',
+        backgroundColor: '#F96302',
     
        
-        borderRadius: 56*z,
+        borderRadius: 10*r,
     width:'100%', // changed from 80 to 100
         
     },
     textstyle:{
                 
                 
-        fontFamily: Medium,
+        fontFamily: "Poppins",
         // fontStyle: 'normal',
         // fontWeight: '500',
-        fontSize: 18*z,
-        lineHeight: 21*z,
+        fontSize: 17*r,
+        lineHeight: 22*l,
         
         
         
