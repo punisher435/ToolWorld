@@ -28,6 +28,7 @@ import store from './redux/store';
 import AuthCheck from './AuthCheck';
 // import Login from './Screens/Login';
 // import Setpassword from './Screens/Setpassword';
+// import Signup from './Screens/Signup';
 
 
 
@@ -62,6 +63,7 @@ React.useEffect(() => {
         <View style={{flex:1,}} >
     <AuthCheck />
     
+     
     
     </View>
   </Provider>

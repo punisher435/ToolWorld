@@ -28,9 +28,13 @@ export default StyleSheet.create({
         justifyContent: "space-between",
         paddingHorizontal: "7%"
     },
+    scrollView:{
+        height:'90%',
+        // padding:'5%',
+    },
     body1: {
         paddingHorizontal: "8%",
-        marginTop: "20%"
+        marginTop: "8%"
     },
     btn: {
         marginTop: "13%"
@@ -38,7 +42,7 @@ export default StyleSheet.create({
     account: {
         flexDirection: "row",
         justifyContent: "center",
-        marginTop: "60%"
+        marginTop: "30%"
     },
     txt: {
         color: "#F96302",
@@ -110,6 +114,16 @@ export default StyleSheet.create({
         lineHeight: 22 * l,
         textDecorationLine:"underline"
     },
+    reg1: {
+        color: "#000000",
+        // textAlign:"center"
+        fontFamily: "Poppins",
+        fontStyle: "normal",
+        fontSize: 13 * r,
+        fontWeight: '600',
+        lineHeight: 22 * l,
+        textDecorationLine:"underline"
+    },
     txtt: {
         color: "#353636",
         // textAlign:"center"
@@ -118,6 +132,10 @@ export default StyleSheet.create({
         fontSize: 15 * r,
         fontWeight: '600',
         lineHeight: 22 * l,
+    },
+    check:{
+        width:30,
+        height:30
     }
 
 })
