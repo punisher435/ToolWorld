@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet, Text, Image, Dimensions } from 'react-native'
+import { View, StyleSheet, Text, Image, Dimensions,TouchableOpacity } from 'react-native'
 
 import colors from '../config/colors';
 import { Constants } from '../config/constants';
@@ -12,7 +12,7 @@ const { width, height } = Dimensions.get('window')
 
 
 
-const CarouselItem = ({ item }) => {
+const CarouselItem = ({ item,flatList,currindex,setcurrindex,data }) => {
 
   
 
@@ -38,11 +38,14 @@ const CarouselItem = ({ item }) => {
                 item.url2
                 
               } />
-             
+             <TouchableOpacity style={styles.image12}onPress={() => { flatList.scrollToIndex({index: data.length > currindex+1 ? currindex+1 : 0 }); if(data.length>currindex+1){setcurrindex(currindex+1);}else{
+              setcurrindex(0);
+             }
+}}>
               <Image style={styles.image2} source={
                 item.url3
                 
-              } />
+              } /></TouchableOpacity>
 
               <View style={styles.textcon1}>
                 <Text style={styles.text3}>{item.title}</Text>

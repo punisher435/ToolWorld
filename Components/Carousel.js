@@ -31,6 +31,7 @@ const Carousel = ({ data }) => {
     const scrollX = new Animated.Value(0)
     
     let position = Animated.divide(scrollX, width)
+    const [currindex,setcurrindex] = useState(0);
     const [dataList, setDataList] = useState(data)
     const [flatList, setflatList] = useState()
 
@@ -38,8 +39,7 @@ const Carousel = ({ data }) => {
         setDataList(data)
         infiniteScroll(dataList)
     })
-
-
+   
     if ( data && data.length) {
         return (
             <View style={styles.main}>
@@ -55,7 +55,7 @@ const Carousel = ({ data }) => {
                         decelerationRate={"fast"}
                         showsHorizontalScrollIndicator={false}
                         renderItem={({ item }) => {
-                            return <CarouselItem item={item} />
+                            return <CarouselItem item={item} data={data} flatList={flatList} currindex={currindex} setcurrindex={setcurrindex}/>
                         }}
                         onScroll={Animated.event(
                             [{ nativeEvent: { contentOffset: { x: scrollX } } }],

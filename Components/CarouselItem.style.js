@@ -112,9 +112,14 @@ export default StyleSheet.create({
         right:0,
     },
     image2:{
-        position:'absolute',
+       
         width:44*r,
         height:44*r,
+       
+    },
+    image12:{
+        position:'absolute',
+       
         bottom:240*r,
         right:21*r,
     },
