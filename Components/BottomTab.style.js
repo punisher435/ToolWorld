@@ -17,7 +17,7 @@ export default StyleSheet.create({
    height:27*Constants.r,
    },
    container:{
-   position:'absolute',
+   backgroundColor:'#FFFFFF',
    bottom:0,
     height:83*Constants.r,
     width:'100%',
