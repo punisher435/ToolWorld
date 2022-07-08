@@ -9,17 +9,17 @@ const w=Constants.w;
 
 export default StyleSheet.create({
    iconimage:{
-    width:24*Constants.r,
-    height:23*Constants.r,
+    width:29*Constants.r,
+    height:27*Constants.r,
    },
    iconimage1:{
-    width:20*Constants.r,
-   height:23*Constants.r,
+    width:24*Constants.r,
+   height:27*Constants.r,
    },
    container:{
    position:'absolute',
    bottom:0,
-    height:80*z,
+    height:83*Constants.r,
     width:'100%',
    },
    container1:{
