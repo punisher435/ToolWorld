@@ -9,12 +9,12 @@ const w=Constants.w;
 
 export default StyleSheet.create({
    iconimage:{
-    width:35*z,
-    height:35*z,
+    width:24*Constants.r,
+    height:23*Constants.r,
    },
    iconimage1:{
-    width:25*z,
-    height:25*z,
+    width:20*Constants.r,
+   height:23*Constants.r,
    },
    container:{
    position:'absolute',
@@ -54,7 +54,7 @@ gradientimage:{
     opacity:0.02,
 },
 item:{
-    width:'33%',
+    width:'20%',
     height:'100%',
     alignItems:'center',
     
@@ -63,7 +63,7 @@ button:{
     paddingTop:15*z,
 },
 textcon:{
-backgroundColor:'#441DFC',
+
 marginTop:10*z,
 height:20*z,
 width:60*z,
@@ -74,7 +74,9 @@ text:{
     fontFamily: 'Roboto-Regular',
     // fontStyle: 'normal',
     // fontWeight: '400',
-    fontSize: 11.0603*z,
+    fontSize: 10*Constants.r,
+    color:'#9B9B9B',
+    lineHeight:10*Constants.l,
   textAlign:'center',
 },
 con1:{
