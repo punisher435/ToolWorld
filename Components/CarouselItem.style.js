@@ -103,13 +103,15 @@ export default StyleSheet.create({
         fontSize: 14 * r,
         lineHeight:17*l,
         color:'#333333',
-        marginRight:38*r,
+        
     },
     image1:{
         position:'absolute',
         height:'100%',
         bottom:0,
         right:0,
+      
+       
     },
     image2:{
        

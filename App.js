@@ -17,7 +17,8 @@ import {
   StyleSheet,
   Text,
   useColorScheme,
-  View,Dimensions,StatusBar,Platform
+  View,Dimensions,StatusBar,Platform,
+  
 } from 'react-native';
 
 
@@ -58,8 +59,9 @@ React.useEffect(() => {
 
   return (
    
-      
-      <Provider store = { store }>
+    
+      <Provider store = { store } style={{flex:1,}}>
+        
         <View style={{flex:1,}} >
     <AuthCheck />
     
@@ -67,7 +69,7 @@ React.useEffect(() => {
     
     </View>
   </Provider>
-     
+
      
     
   );

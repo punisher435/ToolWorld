@@ -10,10 +10,10 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 // import Ionicons from '@expo/vector-icons/Ionicons';
 
 
-import { Form, FormField, SubmitButton } from "../Components/forms";
+import { Form, FormField, SubmitButton } from "../components/forms";
 
 import styles from './Login.style';
-import AppTextInput from "../Components/TextInput";
+import AppTextInput from "../components/TextInput";
 
 
 
@@ -35,7 +35,7 @@ const validationSchema = Yup.object().shape({
 
 
 export default function Login() {
-
+const navigation = useNavigation();
     return (
 
         <View style={styles.container}>
@@ -128,7 +128,7 @@ export default function Login() {
                                     <Text style={styles.acc}>Don't have an account?</Text>
                                 </View>
                                 <View>
-                                    <TouchableOpacity onPress={{}}>
+                                    <TouchableOpacity onPress={() => {navigation.navigate("Signup")}}>
                                         <Text style={styles.reg}>REGISTER</Text>
                                     </TouchableOpacity>
                                 </View>

@@ -1,5 +1,7 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react'
-import { View, StyleSheet, Text, Image, Dimensions,TouchableOpacity } from 'react-native'
+import { View, StyleSheet, Text, Image, Dimensions } from 'react-native'
+import { TouchableOpacity } from 'react-native';
 
 import colors from '../config/colors';
 import { Constants } from '../config/constants';
@@ -13,7 +15,7 @@ const { width, height } = Dimensions.get('window')
 
 
 const CarouselItem = ({ item,flatList,currindex,setcurrindex,data }) => {
-
+const navigation = useNavigation();
   
 
     return (
@@ -23,10 +25,15 @@ const CarouselItem = ({ item,flatList,currindex,setcurrindex,data }) => {
         <View>
           <Text style={styles.text1}>ToolWorld</Text>
         </View>
-        <View>
+        <View style={{marginRight:38*Constants.r,position:'absolute',right:0,zIndex:1,}}>
+        <TouchableOpacity style={{padding:10*Constants.r,}} onPress={() => {console.log("hy");navigation.navigate("Login")}}>
+         
           <Text style={styles.text2}>Skip</Text>
+          
+        </TouchableOpacity>
         </View>
-      </View>
+        </View>
+     
      
              <View style={styles.con1}>
                 <Image style={styles.image} source={
@@ -38,7 +45,7 @@ const CarouselItem = ({ item,flatList,currindex,setcurrindex,data }) => {
                 item.url2
                 
               } />
-             <TouchableOpacity style={styles.image12}onPress={() => { flatList.scrollToIndex({index: data.length > currindex+1 ? currindex+1 : 0 }); if(data.length>currindex+1){setcurrindex(currindex+1);}else{
+             <TouchableOpacity style={styles.image12} onPress={() => { flatList.scrollToIndex({index: data.length > currindex+1 ? currindex+1 : 0 }); if(data.length>currindex+1){setcurrindex(currindex+1);}else{
               setcurrindex(0);
              }
 }}>
