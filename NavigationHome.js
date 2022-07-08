@@ -10,6 +10,7 @@ import MainCart from './screens/MainCart';
 import MainShop from './screens/MainShop';
 import MainWishlist from './screens/MainWishlist';
 import BottomTab from './components/BottomTab';
+import ProductPage from './screens/ProductPage';
 
 /* import Home from './screens/Home';
 
@@ -45,6 +46,7 @@ function StackHome() {
       
       >
          <Stack.Screen name="MainHome" component={Home} />
+         <Stack.Screen name="Product" component={ProductPage} />
         {/* <Stack.Screen name="Sections" component={Sections} />
         <Stack.Screen name="Chapters" component={Chapters} />
         <Stack.Screen name="Video" component={Player} />
