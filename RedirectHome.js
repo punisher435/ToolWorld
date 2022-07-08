@@ -15,7 +15,7 @@ const RedirectHome = (props) => {
     setwidth(Dimensions.get('window').width);
               setheight(Dimensions.get('window').height);
 });
-    if (props.isAuthenticated) {
+    if (true) {
         return (
             <View style={{flex:1,}} onLayout={(e) => {
                 setwidth(Dimensions.get('window').width);
