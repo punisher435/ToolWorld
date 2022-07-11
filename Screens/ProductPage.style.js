@@ -109,6 +109,48 @@ export default StyleSheet.create({
         width:80.5*r,
         marginLeft:10*r,
     },
+    button3:{
+        backgroundColor:'#F96302',
+        flexDirection:'row',
+        height:50*r,
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:10*r,
+        width:153*r,
+        
+       
+    },
+    button4:{
+        backgroundColor:'#0ACF83',
+        
+        height:50*r,
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:10*r,
+        width:153*r,
+        marginLeft:19*r,
+    },
+    text114:{
+        fontFamily: 'DMSans-Bold',
+        fontStyle: 'normal',
+        // fontWeight: '500',
+        fontSize: 14 * r,
+        lineHeight:20*l,
+        
+        color:'#FFFFFF',
+        marginRight:7*r,
+        
+    },
+    text124:{
+        fontFamily: 'DMSans-Bold',
+        fontStyle: 'normal',
+        // fontWeight: '500',
+        fontSize: 14 * r,
+        lineHeight:20*l,
+        
+        color:'#FFFFFF',
+        
+    },
     con4:{
         marginLeft:20*r,
         marginRight:30*r,
@@ -159,5 +201,64 @@ export default StyleSheet.create({
         lineHeight:15*l,
         
         color:'#000000',
+    },
+    text10:{
+        fontFamily: 'DMSans-Bold',
+        fontStyle: 'normal',
+        // fontWeight: '500',
+        fontSize: 16 * r,
+        lineHeight:20*l,
+        
+        color:'#F96302',
+    },
+
+    text11:{
+        fontFamily: 'Poppins-Light',
+        fontStyle: 'normal',
+        // fontWeight: '500',
+        fontSize: 12 * r,
+        lineHeight:15*l,
+        
+        color:'#000000',
+    },
+
+    text12:{
+        fontFamily: 'Poppins-SemiBold',
+        fontStyle: 'normal',
+        // fontWeight: '500',
+        fontSize: 17 * r,
+        lineHeight:22*l,
+        
+        color:'#000000',
+    },
+    text13:{
+        fontFamily: 'Poppins-SemiBold',
+        fontStyle: 'normal',
+        // fontWeight: '500',
+        fontSize: 15 * r,
+        lineHeight:20*l,
+        
+        color:'#F96302',
+    },
+
+    texxt1:{
+        fontFamily: 'DMSans-Bold',
+        fontStyle: 'normal',
+        // fontWeight: '500',
+        fontSize: 16 * r,
+        lineHeight:25*l,
+        letterSpacing:0.0038,
+        color:'#0C1A30',
+        
+    },
+    texxt2:{
+        fontFamily: 'DMSans-Bold',
+        fontStyle: 'normal',
+        // fontWeight: '500',
+        fontSize: 12 * r,
+        lineHeight:22*l,
+        letterSpacing:0.004,
+        color:'#F96302',
+        
     },
 })
