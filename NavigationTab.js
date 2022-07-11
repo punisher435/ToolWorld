@@ -4,8 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
 
-import Welcome from './screens/Welcome'
-import Onboarding from './screens/Onboarding';
+import Welcome from './Screens/Welcome'
+import Onboarding from './Screens/Onboarding';
 /* import Signup from './screens/Signup';
 import Login from './screens/Login';
 import Verify from './screens/Verify';

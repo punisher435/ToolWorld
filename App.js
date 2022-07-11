@@ -26,6 +26,9 @@ import Orientation from 'react-native-orientation';
 
 import store from './redux/store';
 import AuthCheck from './AuthCheck';
+import Categories from './Screens/Categories';
+import Home from './Screens/Home';
+import Profile from './Screens/Profile';
 // import Login from './Screens/Login';
 // import Setpassword from './Screens/Setpassword';
 // import Signup from './Screens/Signup';
@@ -62,6 +65,9 @@ React.useEffect(() => {
       <Provider store = { store }>
         <View style={{flex:1,}} >
     <AuthCheck />
+    
+   
+   
     
      
     

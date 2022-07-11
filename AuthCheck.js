@@ -11,7 +11,7 @@ import {
   } from 'react-native';
 
 import { checkAuthenticated, load_user } from './redux/actions/authactions';
-import Waiting from "./screens/Waiting"
+import Waiting from "./Screens/Waiting"
 
 const AuthCheck = (props) => {
 
