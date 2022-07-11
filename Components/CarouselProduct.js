@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { View,  StyleSheet, Dimensions, FlatList, Animated } from 'react-native'
 import { Constants } from '../config/constants'
-import CarouselItem from './CarouselItem'
+import CarouselItem from './CarouselItemProduct'
 
 
 const { width, heigth } = Dimensions.get('window')
@@ -31,14 +31,14 @@ const Carousel = ({ data }) => {
     const scrollX = new Animated.Value(0)
     
     let position = Animated.divide(scrollX, width)
-    const [currindex,setcurrindex] = useState(0);
+    
     const [dataList, setDataList] = useState(data)
     const [flatList, setflatList] = useState()
 
     useEffect(() => {
         setDataList(data)
-        infiniteScroll(dataList)
-    })
+        infiniteScroll(data)
+    },[data])
    
     if ( data && data.length) {
         return (
@@ -55,7 +55,7 @@ const Carousel = ({ data }) => {
                         decelerationRate={"fast"}
                         showsHorizontalScrollIndicator={false}
                         renderItem={({ item }) => {
-                            return <CarouselItem item={item} data={data} flatList={flatList} currindex={currindex} setcurrindex={setcurrindex}/>
+                            return <CarouselItem item={item} data={data} />
                         }}
                         onScroll={Animated.event(
                             [{ nativeEvent: { contentOffset: { x: scrollX } } }],
@@ -73,7 +73,7 @@ const Carousel = ({ data }) => {
                             return (
                                 <Animated.View
                                     key={i}
-                                    style={{ opacity, height: 7, width: 7, backgroundColor: '#595959', margin: 3, borderRadius: 2 }}
+                                    style={{ opacity, height: 9, width: 10, backgroundColor: '#F96302', margin: 3, borderRadius: 5 }}
                                 />
                             )
                         })}
@@ -89,7 +89,7 @@ const Carousel = ({ data }) => {
 }
 
 const styles = StyleSheet.create({
-    dotView: { flexDirection: 'row', justifyContent: 'center',position:'absolute',bottom:90*Constants.r,left:32*Constants.r, },
+    dotView: { flexDirection: 'row', justifyContent: 'center',position:'absolute',bottom:50*Constants.r,alignSelf:'center', },
     container: {
         flex: 1,
 

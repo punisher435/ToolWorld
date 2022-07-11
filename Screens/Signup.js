@@ -12,10 +12,10 @@ import CheckBox from '@react-native-community/checkbox';
 // import Ionicons from '@expo/vector-icons/Ionicons';
 
 
-import { Form, FormField, SubmitButton } from "../Components/forms";
+import { Form, FormField, SubmitButton } from "../components/forms";
 
 import styles from './Signup.style';
-import AppTextInput from "../Components/TextInput";
+import AppTextInput from "../components/TextInput";
 
 
 
@@ -47,6 +47,7 @@ const validationSchema = Yup.object().shape({
 
 export default function Signup() {
     const [toggleCheckBox, setToggleCheckBox] = useState(false)
+    const navigation = useNavigation();
     return (
 
         <View style={styles.container}>
@@ -272,7 +273,7 @@ export default function Signup() {
                                         <Text style={styles.acc}>Have an account?</Text>
                                     </View>
                                     <View>
-                                        <TouchableOpacity onPress={{}}>
+                                        <TouchableOpacity onPress={() => {navigation.navigate("Login")}}>
                                             <Text style={styles.reg}>LOGIN</Text>
                                         </TouchableOpacity>
                                     </View>

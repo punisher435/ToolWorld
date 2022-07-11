@@ -106,11 +106,12 @@ export default StyleSheet.create({
         
     },
     image1:{
-        position:'absolute',
-        height:'100%',
-        bottom:0,
-        right:0,
-      
+        
+        
+        
+    padding:10*r,
+    
+   
        
     },
     image2:{

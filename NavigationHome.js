@@ -4,9 +4,16 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import Home from './screens/Home';
+import MainProfile from './screens/MainProfile';
+import MainCart from './screens/MainCart';
+import MainShop from './screens/MainShop';
+import MainWishlist from './screens/MainWishlist';
+import BottomTab from './components/BottomTab';
+import ProductPage from './screens/ProductPage';
 
 /* import Home from './screens/Home';
-import BottomTab from './components/BottomTab';
+
 import MainProfile from './screens/MainProfile';
 import MainProgress from './screens/MainProgress';
 import Sections from './screens/Sections';
@@ -39,6 +46,7 @@ function StackHome() {
       
       >
          <Stack.Screen name="MainHome" component={Home} />
+         <Stack.Screen name="Product" component={ProductPage} />
         {/* <Stack.Screen name="Sections" component={Sections} />
         <Stack.Screen name="Chapters" component={Chapters} />
         <Stack.Screen name="Video" component={Player} />
@@ -73,7 +81,7 @@ function StackHome() {
   )
 } */
 
-/* function StackProfile() {
+function StackProfile() {
   return (
       
       <Stack.Navigator initialRouteName="MainProfile" screenOptions={{
@@ -88,13 +96,69 @@ function StackHome() {
       
       >
         <Stack.Screen name="MainProfile" component={MainProfile} />
-         <Stack.Screen name="AccountSettings" component={AccountSettings} />
-        <Stack.Screen name="About" component={About} />
-        <Stack.Screen name="Favourite" component={Favourite} />
-        <Stack.Screen name="Myorders" component={Myorders} /> 
+        
       </Stack.Navigator>
   )
-} */
+}
+
+function StackShop() {
+  return (
+      
+      <Stack.Navigator initialRouteName="MainShop" screenOptions={{
+        headerShown:false,
+        
+      }} headerMode="none"
+
+      options={{
+        headerMode:"none",
+      }}
+     
+      
+      >
+        <Stack.Screen name="MainShop" component={MainShop} />
+        
+      </Stack.Navigator>
+  )
+}
+
+function StackCart() {
+  return (
+      
+      <Stack.Navigator initialRouteName="MainCart" screenOptions={{
+        headerShown:false,
+        
+      }} headerMode="none"
+
+      options={{
+        headerMode:"none",
+      }}
+     
+      
+      >
+        <Stack.Screen name="MainCart" component={MainCart} />
+        
+      </Stack.Navigator>
+  )
+}
+function StackWishlist() {
+  return (
+      
+      <Stack.Navigator initialRouteName="MainWishlist" screenOptions={{
+        headerShown:false,
+        
+      }} headerMode="none"
+
+      options={{
+        headerMode:"none",
+      }}
+     
+      
+      >
+        <Stack.Screen name="MainWishlist" component={MainWishlist} />
+        
+      </Stack.Navigator>
+  )
+}
 
 
 
@@ -121,6 +185,10 @@ function NavigationHome() {
         
       }} >
         <Tab.Screen name="Home"  component={StackHome} />
+        <Tab.Screen name="Shop"  component={StackShop} />
+        <Tab.Screen name="Cart"  component={StackCart} />
+        <Tab.Screen name="Wishlist"  component={StackWishlist} />
+        <Tab.Screen name="Profile"  component={StackProfile} />
         {/* <Tab.Screen name="ProgressStack"  component={StackProgress} />
         <Tab.Screen name="ProfileStack"  component={StackProfile} /> */}
         {/* <Tab.Screen name="AccountStack"  component={StackAccountSettings}/> */}
