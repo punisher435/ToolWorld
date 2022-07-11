@@ -109,7 +109,7 @@ function BottomTab({ state, descriptors, text }) {
       <>
       {
         navigation ? navigation.getCurrentRoute() ? 
-        (navigation.getCurrentRoute().name==="Video" || navigation.getCurrentRoute().name==="Chatbox" || navigation.getCurrentRoute().name==="Payments") ? null : 
+        (navigation.getCurrentRoute().name==="Product" || navigation.getCurrentRoute().name==="Chatbox" || navigation.getCurrentRoute().name==="Payments") ? null : 
         <BottomTab1 state={state} descriptors={descriptors} text={text} navigatipn={navigation}/>
         : <BottomTab1 state={state} descriptors={descriptors} text={text} navigatipn={navigation}/>
         : <BottomTab1 state={state} descriptors={descriptors} text={text} navigatipn={navigation}/>
